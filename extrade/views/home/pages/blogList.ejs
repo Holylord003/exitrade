@@ -38,7 +38,7 @@
                         <%if(pt.post_image){%>
                         <img class="img-fluid" src="data:image/png;base64,<%=pt.post_image %>" alt="<%=pt.post_title%>">
                         <%}else{%>
-                        <img class="img-fluid" src="/img/thumbnail.jpg" alt="<%=pt.post_title%>">
+                        <img class="img-fluid" src="/api/static?filePath=img/thumbnail.jpg" alt="<%=pt.post_title%>">
                         <%}%>
                     </div>
                     <!--//post-thumb-holder-->
