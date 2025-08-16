@@ -1,0 +1,82 @@
+<%if(showNotice){%>
+    <%-include("../../pages/dashboard/welcomeNotice")%>
+<%}else{%>
+
+<html class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="data:image/png;base64,<%=webSettings.website_favicon%>">
+    <title>
+        <%=title %>
+    </title>
+    <link rel="stylesheet" href="/css/user/vendor.bundle.css">
+    <link rel="stylesheet" href="/css/user/style.css">
+    <link rel="stylesheet" href="/css/user/auth.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="nk-body body-wider bg-light-alt no-touch page-loaded chrome">
+
+    <div class="nk-wrap">
+        <main class="nk-pages nk-pages-centered bg-theme">
+            <div class="ath-container">
+                <div class="ath-header text-center">
+                    <a href="/" class="ath-logo"><img src="data:image/png;base64,<%=webSettings.website_logo%>"
+                            alt="logo"></a>
+                </div>
+                <div class="ath-body">
+                    <h5 class="ath-heading title">Log In<small class="tc-default">Enter your login information!</small>
+                    </h5>
+
+
+                    <form id="login">
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-user"></i>
+                                <input id="credentials" class="input-bordered" placeholder="Username" required>
+                            </div>
+                        </div>
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-key"></i>
+                                <input type="password" id="password" value="" class="input-bordered"
+                                    placeholder="Password" required>
+                            </div>
+                        </div>
+
+                        <div class="field-item" style="margin-top:-15px;color:#838383; text-align: right;">
+                            &nbsp;<small><strong><a href="/reset-password">Forgot your Password? </a></strong></small>
+                        </div><strong>
+                            <button class="btn btn-primary btn-block btn-md">Log In</button>
+
+                            <div class="sap-text"><span>Not A Member Yet?</span></div>
+                            <div style="text-align: center;"><a href="/register"
+                                    class="btn btn-md btn-facebook"><span>Sign
+                                        Up Here</span></a></div>
+                        </strong>
+                    </form>
+                </div><strong>
+                    <div class="ath-note text-center tc-light">© <span class="date"></span>
+                        <%=webSettings.website_title%>. All rights reserved
+                    </div>
+                </strong>
+            </div><strong>
+            </strong>
+        </main><strong>
+        </strong>
+    </div>
+
+    <script src="/js/user/login.js"></script>
+    <script src="/js/sweetalert.js"></script>
+</body>
+
+</html>
+
+<%}%>
+

@@ -1,0 +1,57 @@
+<div class="modal fade" id="new_coupon" tabindex="-1" role="dialog" aria-labelledby="new_coupon"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="new_coupon">Generate Coupons</h5>
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+
+
+
+                        <form id="new_coupon">
+
+                            <div class="form-group">
+                                <label for="quantity">How Many?</label>
+                                <input type="number" class="form-control" id="quantity" aria-describedby="quantity"
+                                    required>
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="price">For Which Plan</label>
+
+                                <select required id="price" class="custom-select custom-select-sm form-control form-control-sm">
+                                    <option value="">Select Plan</option>
+                                    <%plans.map(pl=>{%>
+                                    <option value="<%=pl.plan_price%>">
+                                        <%=pl.plan_name%> - (<%=pl.plan_price%>)
+                                    </option>
+                                    
+                                    <%})%>
+                                
+                                </select>
+
+                            </div>
+
+
+
+
+                            <br>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light finish">Generate!</button>
+                        </form>
+
+                    </div> <!-- end card-body-->
+                </div> <!-- end card-->
+            </div>
+
+        </div>
+    </div>
+</div>
+

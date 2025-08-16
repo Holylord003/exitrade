@@ -1,0 +1,26 @@
+.referral-link {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.referral-link input {
+    width: 62%;
+}
+
+.capitalize{
+    text-transform: capitalize !important;
+}
+
+
+.app-card.app-card-settings.shadow-sm.p-4 {
+    margin: 10px 0 !important;
+}
+
+td#action {
+    display: flex;
+}
+
+.showit{
+    display: block !important;
+}

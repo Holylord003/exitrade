@@ -1,0 +1,257 @@
+<%- include('../partials/header'); %>
+
+    <div class="container-fluid dashboard-content ">
+
+
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h2 class="pageheader-title">
+                        <%=title %>
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+
+<div class="ecommerce-widget">
+
+    <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-inline-block">
+                        <h5 class="text-muted">Members</h5>
+                        <h5 class="mb-0"> <strong><%=totalMembers%></strong> Total Members </h5>
+                        <h5 class="mb-0"> <strong>
+                            <%=totalActiveMembers%>
+                        </strong> Active Members</h5>
+                    </div>
+                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+                        <i class="fa fa-users fa-fw fa-sm text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-inline-block">
+                        <h5 class="text-muted">Total Paid Withdrawal</h5>
+                        <h2 class="mb-0"> <%=webSettings.website_currency + totalPaid%></h2>
+                    </div>
+                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+                        <i class="fa fa-money fa-fw fa-sm text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-inline-block">
+                        <h5 class="text-muted">Total Unpaid Withdrawal</h5>
+                        <h2 class="mb-0"> <%=webSettings.website_currency + totalUnpaid%></h2>
+                    </div>
+                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+                        <i class="fa fa-money fa-fw fa-sm text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-inline-block">
+                        <h5 class="text-muted">Active Investment</h5>
+                        <h2 class="mb-0"> <%=totalActiveOrders%></h2>
+                    </div>
+                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+                        <i class="fa fa-fw fa-line-chart fa-sm text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="card">
+                    <h5 class="card-header">Recent Active Investment</h5>
+                    <div class="card-body p-0">
+                        <%if(totalActiveOrdersList.length> 0){ %>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="bg-light">
+                                        <tr class="border-0">
+                                            <th class="border-0">#</th>
+                                            <th class="border-0">Username</th>
+                                            <th class="border-0">Plan Name</th>
+                                            <th class="border-0">Plan Price</th>
+                                            
+                                            <th class="border-0">Start Date</th>
+                                            <th class="border-0">End Date</th>
+                                            <th class="border-0">Status</th>
+                                            
+        
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <%totalActiveOrdersList.map((od,index)=>{ %>
+                                            <tr>
+                                                <td>
+                                                    <%=index + 1 %>
+                                                </td>
+
+                                                <td>
+                                                    <%=od.username %>
+                                                </td>
+
+                                                <td>
+                                                    <%=od.plan_name %>
+                                                </td>
+                                                <td>
+                                                    <%=webSettings.website_currency + od.plan_price.toLocaleString() %>
+                                                </td>
+                                                
+        
+                                                <td>
+                                                    <%=od.order_created %>
+                                                </td>
+                                                <td>
+                                                    <%=od.order_end %>
+                                                </td>
+        
+                                                <td>
+                                                    <a  href="javascript: void(0);" class="btn btn-xs btn-success ml-1">Active</a>
+                                                </td>
+        
+                                                
+                                                
+                                                
+                                            </tr>
+                                            <% }) %>
+        
+                                                <tr>
+                                                    <td colspan="9"></td>
+                                                </tr>
+                                    </tbody>
+        
+                                </table>
+
+                                
+        
+        
+        
+                            </div>
+                            <% }else{%>
+                                <h3 class="text-center pt-3">No Pending Investment At The Moment</h3>
+                                <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--RECENT PENDING WITHDRAWAL-->     
+<div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="card">
+                    <h5 class="card-header">Recent Pending Withdrawals</h5>
+                    <div class="card-body p-0">
+                       
+                    <%if(pendingWithdrawal.length> 0){ %>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="bg-light">
+                                    <tr class="border-0">
+                                        <th class="border-0">#</th>
+                                        <th class="border-0">Fullname</th>
+                                    
+                                        <th class="border-0">Recieveable Amount</th>
+                                        <th class="border-0">Status</th>
+                                        <th class="border-0">Created</th>
+                                       
+                    
+                                        
+                    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <%pendingWithdrawal.map((pd,index)=>{ %>
+                                        <tr>
+                                            <td>
+                                                <%=index + 1 %>
+                                            </td>
+                    
+                                            <td>
+                                                <%=pd.fullname %>
+                                            </td>
+                    
+                                            
+                                            <td>
+                                                <%=webSettings.website_currency + pd.withdrawal_amount %>
+                                            </td>
+                                           
+
+                                            <td>
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-danger ml-1">Pending</a>
+                                            </td>
+                    
+                    
+                                            <td>
+                                                <%=pd.withdrawal_created %>
+                                            </td>
+                    
+                                            
+                    
+                                            
+                    
+                                        </tr>
+                                        <% }) %>
+                    
+                                            <tr>
+                                                <td colspan="9"></td>
+                                            </tr>
+                                </tbody>
+                    
+                            </table>
+                    
+                            
+                    
+                    
+                    
+                        </div>
+                        <% }else{%>
+                            <h3 class="text-center pt-3">No Pending Withdrawal Request At The Moment</h3>
+                            <%}%>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--CONTAINER ENDS-->
+    </div>
+
+
+
+    <%- include('../partials/footer'); %>

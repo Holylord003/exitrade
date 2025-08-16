@@ -1,0 +1,199 @@
+<%- include('../../partials/header'); %>
+
+    <div class="container-fluid dashboard-content">
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h2 class="pageheader-title">
+                        <%=title %>
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div id="scroll-horizontal-datatable_wrapper"
+                            class="dataTables_wrapper dt-bootstrap4 no-footer">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2">
+                                    <div class="dataTables_length" id="scroll-horizontal-datatable_length">
+                                        <label>Filter By Price</label>
+                                        <select name="scroll-horizontal-datatable_length"
+                                            aria-controls="scroll-horizontal-datatable"
+                                            class="custom-select custom-select-sm form-control form-control-sm">
+                                            <option value="">Select Price</option>
+                                            <%plans.map(pl=>{%>
+                                                <option value="<%=pl.plan_price %>">
+                                                    <%=webSettings.website_currency + pl.plan_price %>
+                                                </option>
+                                                <%})%>
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="col-sm-12 col-md-2">
+                                    <div id="scroll-horizontal-datatable_filter" class="dataTables_filter">
+                                        <form class="search-coupon"><label>Search:</label><input type="search"
+                                                class="form-control form-control-sm" placeholder="Search By Coupon Name"
+                                                aria-controls="scroll-horizontal-datatable"></form>
+                                    </div><br>
+
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-2">
+                                    <div class="dataTables_length" id="scroll-horizontal-datatable_length">
+                                        <label>Sort Coupon Code By:</label>
+                                        <select id="type" name="scroll-horizontal-datatable_length"
+                                            aria-controls="scroll-horizontal-datatable"
+                                            class="custom-select custom-select-sm form-control form-control-sm">
+                                            <option value="">Select Coupon Type</option>
+                                            <option value="1">Used Coupons</option>
+                                            <option value="0">Unused/New Coupons</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-2">
+                                    <div class="dataTables_length" id="scroll-horizontal-datatable_length">
+                                        <label>Reset:</label><br>
+                                        <a href="javascript: void(0);" class="btn btn-xs btn-warning reset"><i
+                                                class="mdi mdi-delete-forever"></i> Reset
+                                            Query</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <div class="dataTables_length" id="scroll-horizontal-datatable_length">
+                                        <label>New</label><br>
+                                        <a href="javascript: void(0);" data-toggle="modal" data-target="#new_coupon" class="btn btn-xs btn-primary reset"><i
+                                                class="mdi mdi-delete-forever"></i> Create New Coupon</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+
+                    <%if(coupons.length> 0){ %>
+                        <div class="card">
+                            <div class="card-body">
+
+
+
+
+                            </div>
+
+
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Code</th>
+                                            <th>Amount</th>
+                                            <th>Author</th>
+                                            <th>Status</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <%coupons.map((cp,index)=>{ %>
+                                            <tr>
+                                                <th scope="row">
+                                                    <%=index + 1 %>
+                                                </th>
+                                                <td class="code"><input type="text" class="form-control form-control-sm"
+                                                        readonly value="<%= cp.coupon_code %>"></td>
+                                                <td>
+                                                    <%= webSettings.website_currency + cp.coupon_amount %>
+                                                </td>
+
+                                                <td>
+                                                    <%=cp.username %>
+                                                </td>
+                                                <td>
+                                                    <% if(cp.coupon_status===1){ %>
+                                                        <button type="button"
+                                                            class="btn btn-warning width-sm waves-effect waves-light"><i
+                                                                class="fa fa-exclamation-triangle"
+                                                                aria-hidden="true"></i>
+                                                            Used</button>
+                                                        <%} else{ %>
+                                                            <button type="button"
+                                                                class="btn btn-success width-sm waves-effect waves-light"><i
+                                                                    class="fa fa-check" aria-hidden="true"></i>
+                                                                Valid</button>
+                                                            <% } %>
+                                                </td>
+
+                                            </tr>
+                                            <%})%>
+
+
+                                    </tbody>
+                                </table>
+                                <ul class="pagination">
+                                    <%if(prevBtn){%>
+                                        <li class="page-item">
+                                            <a class="page-link" href="<%=link%>page=<%=prevBtn%>" aria-label="Previous">
+                                                <span aria-hidden="true">«Previous</span> </a>
+                                        </li>
+                                
+                                        <%}%>
+                                
+                                
+                                            <%if(nextBtn){%>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="<%=link%>page=<%=nextBtn%>" aria-label="Next"><span
+                                                            aria-hidden="true">Next»</span>
+                                                    </a>
+                                                </li>
+                                
+                                                <%}%>
+                                
+                                
+                                </ul>
+                            </div>
+
+
+
+
+                        </div>
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+            <%}else{ %>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="text-center">Empty Result</h4>
+                    </div>
+                </div>
+                <%}%>
+
+
+
+
+        </div><!-- end col-->
+    </div>
+
+
+
+<%-include("./modal")%>
+
+    </div>
+
+    <script src="/js/admin/coupon/coupon.js"></script>
+    <%- include('../../partials/footer'); %>

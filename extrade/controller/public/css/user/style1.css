@@ -1,0 +1,8 @@
+.left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-doc-meta li {
+  font-size: 15px;
+}

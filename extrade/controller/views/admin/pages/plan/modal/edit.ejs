@@ -1,0 +1,92 @@
+<div class="">
+
+
+
+    <div class="modal fade" id="<%=pk.id%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Plan</h5>
+                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+
+
+
+                            <form data-id="<%=pk.id%>" id="edit-package">
+                                
+                                <div class="form-group">
+                                    <label for="name">Plan Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" value="<%=pk.plan_name%>" required>
+                                
+                                </div>
+                                
+                                
+                                <div class="form-group">
+                                    <label for="price">Plan Price</label>
+                                    <input type="number" class="form-control" id="price" aria-describedby="price" value="<%=pk.plan_price%>"  required>
+                                
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="duration">Plan Duration</label>
+                                    <input type="number" class="form-control" id="duration" aria-describedby="duration" placeholder="E.g 30 days" value="<%=pk.plan_duration%>" 
+                                        required>
+                                    <small id="duration" class="form-text text-muted">The format must be in days e.g 2 Month =
+                                        60 days</small>
+                                
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="withdrawal">Plan Withdrawal Segment</label>
+                                    <input type="number" class="form-control" id="withdrawal" aria-describedby="withdrawal" value="<%=pk.plan_withdrawal_segment%>"  required>
+                                    <small id="withdrawal" class="form-text text-muted">this means how many time they can make withdrawal while the
+                                        investment plan is still Active!</small>
+                                
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="roi">Plan R.O.I </label>
+                                    <input type="number" class="form-control" id="roi" aria-describedby="withdrawal" value="<%=pk.plan_roi%>"  required>
+                                    <small id="withdrawal" class="form-text text-muted">percentage amount the system will push for withdrawal during the
+                                        investment duration!, it must be in percentage</small>
+                                
+                                </div>
+                                
+                                
+                                <h5>Bonus</h5>
+                                <div class="form-group">
+                                    <label for="referral">Referral Bonus</label>
+                                    <input type="number" class="form-control" id="referral" aria-describedby="referral" value="<%=pk.plan_referral%>"  required>
+                                    <small id="referral" class="form-text text-muted">Amount a user will earn if his referree purchase this plan, it must be in percentage</small>
+                                
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="visibile_check">Plan Visibility</label><br>
+                                    <div class="switch-button switch-button-success">
+                                        <input <%=pk.plan_status === 1 ? 'checked' : ''%> type="checkbox" name="visibile_check" id="status_<%=pk.id%>"><span>
+                                            <label for="status_<%=pk.id%>"></label></span>
+                                    </div>
+                                </div>
+
+                    
+                                <br>
+                                <button type="submit" class="btn btn-primary waves-effect waves-light finish">Finish
+                                    Edit!</button>
+                            </form>
+
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

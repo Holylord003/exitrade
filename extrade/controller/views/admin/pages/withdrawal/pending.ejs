@@ -1,0 +1,142 @@
+<%-include("../../partials/header");%>
+
+    <div class="container-fluid dashboard-content">
+
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <h4 class="page-title">
+                        <%= title %>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="card">
+                    <h5 class="card-header">Pending Withdrawal List
+                        <%if(pending.length> 1){ %>
+                        
+                            <div class="actions float-right">
+                                <a href="javascript: void(0);" id="pay-marked" class="btn btn-xs btn-dark ml-1">Pay Marked Request <i
+                                        class="fa fa-check" aria-hidden="true"></i></a>
+                                <a href="javascript: void(0);" id="delete-all" class="btn btn-xs btn-danger ml-1">Delete Marked Request <i class="fa fa-trash" aria-hidden="true"></i></a>
+
+                                <a href="javascript: void(0);" id="export-to-csv" class="btn btn-xs btn-primary ml-1 pay">Export To CSV <i
+                                        class="fa fa-table" aria-hidden="true"></i></a>
+                        
+                            
+                        
+                                
+                        
+                        
+                            </div>
+                        
+                            <%}%>
+                    </h5>
+                    <div class="card-body p-0">
+                       
+                    <%if(pending.length> 0){ %>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="bg-light">
+                                    <tr class="border-0">
+                                        <th class="border-0"><label class="custom-control custom-checkbox">
+                                                <input id="head-mark" type="checkbox" class="custom-control-input"><span class="custom-control-label"></span>
+                                            </label></th>
+                                        <th class="border-0">#</th>
+                                        <th class="border-0">Fullname</th>
+                                        <th class="border-0">Payment Details</th>
+                                        <th class="border-0">Recieveable Amount</th>
+                                        <th class="border-0">Status</th>
+                                        <th class="border-0">Created</th>
+                                       
+                    
+                                        <th class="border-0">Action</th>
+                    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <%pending.map((pd,index)=>{ %>
+                                        <tr>
+                                            
+                                            <td><label class="custom-control custom-checkbox">
+                                                    <input data-withdrawal_id="<%=pd.withdrawal_id%>" id="mark" type="checkbox" class="custom-control-input"><span class="custom-control-label"></span>
+                                                </label></td>
+
+                                            <td>
+                                                <%=index + 1 %>
+                                            </td>
+                    
+                                            <td>
+                                                <%=pd.fullname %>
+                                            </td>
+                    
+                                            <td>
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-info ml-1 view" data-toggle="modal"
+                                                    data-target="#<%=pd.withdrawal_id%>"><i class="fa fa-eye" aria-hidden="true"></i> View
+                                                    Details</a>
+
+                                                    <%-include("./modal/views",{pd});%>
+                                            </td>
+
+                                            <td>
+                                                <%=webSettings.website_currency + pd.withdrawal_amount %>
+                                            </td>
+                                           
+
+                                            <td>
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-danger ml-1">Pending</a>
+                                            </td>
+                    
+                    
+                                            <td>
+                                                <%=pd.withdrawal_created %>
+                                            </td>
+                    
+                                            
+                    
+                                            <td>
+                                                <a data-withdrawal_id="<%=pd.withdrawal_id%>" data-user_id="<%=pd.uid%>" data-amount="<%=pd.withdrawal_amount%>" id="paid"
+                                                    href="javascript: void(0);" class="btn btn-xs btn-info ml-1 edit"><i class="fa fa-paper-plane"
+                                                        aria-hidden="true"></i></a>
+                    
+                                                <a data-withdrawal_id="<%=pd.withdrawal_id%>"  id="delete" href="javascript: void(0);"
+                                                    class="btn btn-xs btn-danger ml-1 delete-package"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></a>
+                                            </td>
+                    
+                                        </tr>
+                                        <% }) %>
+                    
+                                            <tr>
+                                                <td colspan="9"></td>
+                                            </tr>
+                                </tbody>
+                    
+                            </table>
+                    
+                            <%-include("../../partials/pagination");%>
+                    
+                    
+                    
+                        </div>
+                        <% }else{%>
+                            <h3 class="text-center pt-3">No Pending Withdrawal Request At The Moment</h3>
+                            <%}%>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="/js/admin/withdrawal/pendingList.js"></script>
+    <%-include("../../partials/footer");%>

@@ -1,0 +1,76 @@
+<html class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="data:image/png;base64,<%=webSettings.website_favicon%>">
+    <title>
+        <%=title %>
+    </title>
+    <link rel="stylesheet" href="/css/user/vendor.bundle.css">
+    <link rel="stylesheet" href="/css/user/style.css">
+    <link rel="stylesheet" href="/css/user/auth.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="nk-body body-wider bg-light-alt no-touch page-loaded chrome">
+
+    <div class="nk-wrap">
+        <main class="nk-pages nk-pages-centered bg-theme">
+            <div class="ath-container">
+                <div class="ath-header text-center">
+                    <a href="/" class="ath-logo"><img src="data:image/png;base64,<%=webSettings.website_logo%>"
+                            alt="logo"></a>
+                </div>
+                <div id="step2" class="ath-body">
+                    <h5 class="ath-heading title">Change Your Password<small class="tc-default">Change Your Password, And Keep It
+                            Safe</small>
+                    </h5>
+                
+                
+                    <form id="step2">
+                
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-key"></i>
+                                <input id="password" class="input-bordered" placeholder="New Password" type="password" required>
+                            </div>
+                        </div>
+                
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-key"></i>
+                                <input id="password2" class="input-bordered" placeholder="Confirm Password" type="password" required>
+                            </div>
+                        </div>
+                
+                
+                
+                        <strong>
+                            <button class="btn btn-primary btn-block btn-md">Change Password</button>
+                
+                
+                        </strong>
+                    </form>
+                </div>
+                <strong>
+                    <div class="ath-note text-center tc-light">© <span class="date"></span>
+                        <%=webSettings.website_title%>. All rights reserved
+                    </div>
+                </strong>
+            </div><strong>
+            </strong>
+        </main><strong>
+        </strong>
+    </div>
+
+    <script src="/js/user/resetpassword.js"></script>
+    <script src="/js/sweetalert.js"></script>
+</body>
+
+</html>
+
+
+

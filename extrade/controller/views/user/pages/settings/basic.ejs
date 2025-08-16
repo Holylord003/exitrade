@@ -1,0 +1,71 @@
+<%-include("../../partials/header");%>
+
+<div class="container-xl">
+
+    <h1 class="app-page-title">
+        <%=title%>
+    </h1>
+
+    <div class="row">
+        
+        <div class="col-12 col-md-6">
+            <div class="app-card app-card-settings shadow-sm p-4">
+            
+                <div class="app-card-body">
+                    <form id="basic">
+            
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" value="<%=user.fullname%>" required="">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" value="<%=user.email%>" required="">
+                        </div>
+            
+                        <button type="submit" class="btn app-btn-primary">Save Changes</button>
+                    </form>
+                </div>
+                <!--//app-card-body-->
+            
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="app-card app-card-settings shadow-sm p-4">
+            
+                <div class="app-card-body">
+                    <form id="password">
+            
+                        <div class="mb-3">
+                            <label for="oldPassword" class="form-label">Old Password</label>
+                            <input type="text" class="form-control" id="oldPassword" value="" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="password" value="" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2" class="form-label">Confirm New Password</label>
+                            <input type="password" class="form-control" id="password2" value="" required="">
+                        </div>
+            
+                        <button type="submit" class="btn app-btn-primary">Change Password</button>
+                    </form>
+                </div>
+                <!--//app-card-body-->
+            
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<script src="/js/user/settings/basic.js"></script>
+<%-include("../../partials/footer");%>

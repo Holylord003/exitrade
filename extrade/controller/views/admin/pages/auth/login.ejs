@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <%= title %> | <%= webSettings.website_title %> - <%= webSettings.website_tagline %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="<%= webSettings.website_description %>" name="description">
+    <meta content="<%= webSettings.website_author %>" name="author">
+    <meta name="google-site-verification" content="<%= webSettings.website_google_verification_code %>">
+   
+    <link rel="shortcut icon" href="data:image/png;base64,<%= webSettings.website_favicon %>">
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="/css/admin/bootstrap.css" rel="stylesheet">
+    <link href="/css/admin/style.css" rel="stylesheet">
+    <link href="/css/admin/circular.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="splash-container">
+        <div class="card ">
+            <div class="card-header text-center"><a href="?"><img class="logo-img"
+                        src="data:image/png;base64,<%= webSettings.website_logo %>"
+                        style="width: 155px;height: 35px;object-fit: contain;" alt="logo"></a><span
+                    class="splash-description">Please enter your
+                    user information.</span></div>
+            <div class="card-body">
+                <form id="login">
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" id="credentials" type="text"
+                            placeholder="Username/Email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" id="password" type="password"
+                            placeholder="Password">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="/js/admin/auth.js"></script>
+    <script src="/js/sweetalert.js"></script>
+   
+
+</body>
+
+</html>

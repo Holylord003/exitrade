@@ -1,0 +1,102 @@
+<%-include("../../partials/header");%>
+
+<div class="container-fluid dashboard-content">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">
+                    <%= title %>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-12">
+
+
+
+            <div class="card">
+                <div class="card-body">
+
+
+
+                    <form id="add">
+                        <div class="form-group">
+                            <label for="name">Plan Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="price">Plan Price</label>
+                            <input type="number" class="form-control" id="price" aria-describedby="price" required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Plan Duration</label>
+                            <input type="number" class="form-control" id="duration" aria-describedby="duration"
+                                placeholder="E.g 30 days" required>
+                            <small id="duration" class="form-text text-muted">The format must be in days e.g 2 Month =
+                                60 days</small>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="withdrawal">Plan Withdrawal Segment</label>
+                            <input type="number" class="form-control" id="withdrawal" aria-describedby="withdrawal"
+                                required>
+                            <small id="withdrawal" class="form-text text-muted">this means how many time they can make withdrawal while the investment plan is still Active!</small>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="roi">Plan R.O.I </label>
+                            <input type="number" class="form-control" id="roi" aria-describedby="withdrawal" required>
+                            <small id="withdrawal" class="form-text text-muted">percentage amount the system will push for withdrawal during the investment duration!, it must be in percentage</small>
+                        
+                        </div>
+
+
+                        <h5>Bonus</h5>
+                        <div class="form-group">
+                            <label for="referral">Referral Bonus</label>
+                            <input type="number" class="form-control" id="referral" aria-describedby="referral"
+                                required>
+                            <small id="referral" class="form-text text-muted">Amount a user will earn if his referree purchase this plan, (it must be in percentage)</small>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="visible">Plan Visibility</label><br>
+                            <div class="switch-button switch-button-success">
+                                <input  type="checkbox" name="switch16" id="visibile_check"><span>
+                                    <label for="visibile_check"></label></span>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">Create!</button>
+                    </form>
+
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+
+
+
+
+        </div><!-- end col-->
+    </div>
+</div>
+
+<script src="/js/admin/plan/add.js"></script>
+<%-include("../../partials/footer");%>

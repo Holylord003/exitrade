@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>
+        <%= title %> | <%= webSettings.website_title %> - <%= webSettings.website_tagline %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="<%= webSettings.website_description %>" name="description">
+    <meta content="<%= webSettings.website_author %>" name="author">
+    <meta name="google-site-verification" content="<%= webSettings.website_google_verification_code %>">
+  
+    <link rel="shortcut icon" href="data:image/png;base64,<%= webSettings.website_favicon %>">
+    
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="/css/admin/style.css" rel="stylesheet">
+    <link href="/css/admin/circular.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0, 0, 0, 0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+
+        .jqsfield {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+
+
+
+    <div class="dashboard-main-wrapper">
+
+
+
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="/user/dashboard"><%= webSettings.website_title %></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#user" aria-controls="user" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    
+                        <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"
+                                alt="" class="user-avatar-md rounded-circle"></a>
+                        <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">
+                                    d<%= user.username %>
+                                </h5>
+                                <span class="status"></span><span class="ml-2">
+                                    <%= user.role %>
+                                </span>
+                            </div>
+                            <a class="dropdown-item" href="/dashboard"><i class="fa fa-user mr-2"></i>Account</a>
+                            <a class="dropdown-item" href="/settings/basic"><i class="fa fa-cog mr-2"></i>Setting</a>
+                            <a class="dropdown-item" href="/logout"><i class="fa fa-power-off mr-2"></i>Logout</a>
+                        </div>
+                    
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        
+                        
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>" alt="" class="user-avatar-md rounded-circle"></a> 
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name"><%= user.username %></h5>
+                                    <span class="status"></span><span class="ml-2"><%= user.role %></span>
+                                </div>
+                                <a class="dropdown-item" href="/dashboard"><i class="fa fa-user mr-2"></i>Account</a>
+                                
+                                <a class="dropdown-item" href="/logout"><i class="fa fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+
+
+        <%- include('./sidebar'); %>
+
+
+
+
+
+
+        <div class="dashboard-wrapper">
+            
+                
+            
+
+

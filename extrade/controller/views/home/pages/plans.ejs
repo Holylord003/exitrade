@@ -1,0 +1,67 @@
+<%- include('../partials/header'); %>
+
+<section class="features-columns-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5"><%=title%></h2>
+        <div class="row">
+            
+            
+            <%plans.map(pl =>{%>
+
+            <div class="col-12 col-lg-6 mb-5">
+                <div class="item shadow rounded">
+                    <div class="icon-holder">
+                        <div class="icon dripicons-briefcase"></div>
+                    </div>
+                    <!--//icon-holder-->
+                    <div class="column-content">
+                        <h4><%=pl.membership_name || pl.plan_name %></h4><h6>
+                            <%=webSettings.website_currency%><%= pl.price || pl.plan_price%> <span>/
+                                    <%=pl.membership_duration || pl.plan_duration %> Days
+                        </h6>
+                        <div class="desc mb-2">
+                            <ul>
+                                
+                                <li>Referral Bonus: <span>
+                                        <strong>
+                                            <%=pl. plan_referral%>%
+                                        </strong> of the plan price amount your referree purchase
+                                    </span></li>
+                                
+                                
+                                <li>Return Of Investment (R.O.I): <span>
+                                        <strong>
+                                            <%=pl.plan_roi%>%
+                                        </strong>
+                                    </span></li>
+                                
+                                <li>Withdrawal Segment: <span>
+                                        you will withdrawal <strong>
+                                            <%=pl.plan_withdrawal_segment%> times
+                                        </strong> before your investment plan expired
+                                    </span></li>
+                               
+                                
+                                
+                            </ul>
+                        </div>
+                        <a class="more-link" href="/register">Get Started<span class="link-arrow">→</span></a>
+                    </div>
+                    <!--//column-content-->
+                </div>
+                <!--//item-->
+            
+            </div>
+            <!--//col-->
+
+            <%})%>
+
+            
+        </div>
+        <!--//row-->
+    </div>
+    <!--//container-->
+</section>
+
+
+<%- include('../partials/footer'); %>

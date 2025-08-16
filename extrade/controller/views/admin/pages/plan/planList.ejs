@@ -1,0 +1,105 @@
+<%-include("../../partials/header");%>
+
+<div class="container-fluid dashboard-content">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">
+                    <%= title %>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">Plan List</h5>
+                <div class="card-body p-0">
+                    <%if(packages.length> 0){ %>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="bg-light">
+                                    <tr class="border-0">
+                                        <th class="border-0">#</th>
+                                        <th class="border-0">Name</th>
+                                        <th class="border-0">Price</th>
+                                        <th class="border-0">Duration</th>
+                                        <th class="border-0">Withdrawal Segment</th>
+                                        <th class="border-0">Referral Bonus</th>
+                                        <th class="border-0">R.O.I</th>
+                                        <th class="border-0">Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <%packages.map((pk,index)=>{ %>
+                                        <tr>
+                                            <td>
+                                                <%=index + 1 %>
+                                            </td>
+
+                                            <td>
+                                                <%=pk.plan_name %>
+                                            </td>
+                                            <td>
+                                                <%=webSettings.website_currency + pk.plan_price %>
+                                            </td>
+                                            <td>
+                                                <%=pk.plan_duration %> days
+                                            </td>
+
+                                            <td>
+                                                <%=pk.plan_withdrawal_segment %>
+                                            </td>
+
+                                            <td>
+                                                <%=pk.plan_referral %>%
+                                            </td>
+
+                                            <td>
+                                                <%=pk.plan_roi %>%
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-info ml-1 edit"
+                                                    data-toggle="modal" data-target="#<%=pk.id%>"><i
+                                                        class="fa fa-pencil" aria-hidden="true"></i></a>
+
+                                                <a data-id="<%=pk.id%>" href="javascript: void(0);"
+                                                    class="btn btn-xs btn-danger ml-1 delete-package"><i
+                                                        class="fa fa-trash" aria-hidden="true"></i></a>
+                                            </td>
+                                            <%-include("./modal/edit",{pk});%>
+                                        </tr>
+                                        <% }) %>
+
+                                            <tr>
+                                                <td colspan="9"></td>
+                                            </tr>
+                                </tbody>
+
+                            </table>
+
+
+
+                        </div>
+                        <% }else{%>
+                            <h3 class="text-center pt-3">No Package At The Moment</h3>
+                            <%}%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<script src="/js/admin/plan/planList.js"></script>
+<%-include("../../partials/footer");%>

@@ -1,0 +1,79 @@
+<div class="">
+
+
+
+    <div class="modal fade" id="<%=mb.uid%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit <%=mb.username%></h5>
+                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+
+
+
+                            <form data-id="<%=mb.uid%>" id="edit-member">
+                                
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" aria-describedby="username" value="<%=mb.username%>"
+                                        required="">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" class="form-control" id="fullname" aria-describedby="fullname" value="<%=mb.fullname%>"
+                                        required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" aria-describedby="email" value="<%=mb.email%>"
+                                        required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="roi_balance">ROI Balance</label>
+                                    <input type="number" class="form-control" id="roi_balance" aria-describedby="roi_balance" value="<%=mb.roi_balance%>"
+                                        required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="referral_balance">Referral Balance</label>
+                                    <input type="number" class="form-control" id="referral_balance" aria-describedby="referral_balance" value="<%=mb.referral_balance%>"
+                                        required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="referral_balance">Role</label>
+                                    <select id="role" class="custom-select custom-select-sm form-control form-control-sm">
+                                        <%if(mb.role === "member"){%>
+                                        <option selected="" value="member">Member</option>
+                                        <option value="admin">Administrator</option>
+                                        <%}else{%>
+                                        <option value="member">Member</option>
+                                        <option value="admin">Administrator</option>
+                                        <%}%>
+                                        
+                                    </select>
+                                </div>
+                                
+
+                                <button type="submit" id="submit-btn" class="btn btn-primary waves-effect waves-light">Save Changes</button>
+
+                            </form>
+
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

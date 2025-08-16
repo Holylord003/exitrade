@@ -1,0 +1,85 @@
+<%- include('../partials/header'); %>
+
+<section class="contact-header page-header over-curve py-4 py-md-5">
+    <div class="container text-center">
+        <div class="single-col-max mx-auto">
+            <h1 class="page-headline mb-3">Get In Touch</h1>
+            <div class="page-tagline mb-5">Did you have any complaints you want to log to us, or you want to contact us for something different? We'd love to hear from you! </div>
+            
+
+            <div class="contact-form-box shadow rounded p-5 mb-5">
+                <form id="contactForm" class="contact-form">
+                    <h3 class="text-center">How Can We Help?</h3>
+                    <div class="mb-3 text-center">For complaints log and general questions, please use the form below.</div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-xl-6">
+                            <label class="sr-only" for="cname">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                minlength="2" required="">
+                        </div>
+                        <div class="form-group col-12 col-xl-6">
+                            <label class="sr-only" for="cemail">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                required="">
+                        </div>
+
+                        <div class="form-group col-12">
+                            <label class="sr-only" for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                required="">
+                        </div>
+
+                        <div class="form-group col-12">
+                            <label class="sr-only" for="cmessage">Your message</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Enter your message"
+                                rows="10" required=""></textarea>
+                        </div>
+                        <div class="form-group col-12">
+                            <button type="submit" class="btn btn-block btn-gradient py-2">Submit</button>
+                        </div>
+                    </div>
+                    <!--//form-row-->
+                </form>
+                <!--//contact-form-->
+            </div>
+            <!--//contact-form-box-->
+
+            <div class="contact-form-box p-5 shadow rounded bg-white mb-5">
+                <h3 class="text-center mb-4">How To Find Us</h3>
+                <div class="address mb-4">
+                    <div class="company-name font-weight-bold">Head Office</div>
+                    <div class="road">
+                        <%=webSettings.website_address %>
+                    </div>
+                
+                </div>
+                <div class="address mb-4">
+                    <div class="company-name font-weight-bold">Support Email</div>
+                    <div class="road">
+                        <%=webSettings.website_email %>
+                    </div>
+                
+                </div>
+                <div class="address mb-4">
+                    <div class="company-name font-weight-bold">Official Phone Number</div>
+                    <div class="road">
+                        <%=webSettings.website_phone_number %>
+                    </div>
+                
+                </div>
+                <!--//address-->
+
+                
+            </div>
+            <!--//gmap-wrapper-->
+
+        </div>
+        <!--//single-col-max-->
+
+    </div>
+    <!--//container-->
+</section>
+
+<script src="/js/home/contact.js"></script>
+<script src="/js/sweetalert.js"></script>
+<%- include('../partials/footer'); %>

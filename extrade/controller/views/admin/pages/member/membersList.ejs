@@ -1,0 +1,223 @@
+<%- include('../../partials/header'); %>
+
+
+
+
+    <div class="container-fluid dashboard-content">
+
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <h4 class="page-title">
+                        <%= title %>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div id="scroll-horizontal-datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="dataTables_length" id="scroll-horizontal-datatable_length">
+                                        <label>Filter By Investment Status</label>
+                                        <select id="filterByStatus" name="scroll-horizontal-datatable_length" aria-controls="scroll-horizontal-datatable"
+                                            class="custom-select custom-select-sm form-control form-control-sm">
+                                            <option value="">Select Status</option>
+                                            <option value="active">Active</option>
+                                            <option value="Not Running">In Active</option>
+                                            
+                    
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                    
+                                <div class="col-sm-12 col-md-4">
+                                    <div id="scroll-horizontal-datatable_filter" class="dataTables_filter">
+                                        <form id="search" class="search-member"><label>Search Member:</label><input type="search"
+                                                class="form-control form-control-sm" placeholder="Search By Username Or Fullname"
+                                                aria-controls="scroll-horizontal-datatable"></form>
+                                    </div><br>
+                    
+                    
+                                </div>
+                    
+                    
+                    
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="dataTables_length" id="scroll-horizontal-datatable_length">
+                                        <label>Reset:</label><br>
+                                        <a id="reset" href="javascript: void(0);" class="btn btn-xs btn-warning reset"><i
+                                                class="mdi mdi-delete-forever"></i> Reset
+                                            Query</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card-body p-0">
+                        <%if(members.length> 0){ %>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="bg-light">
+                                        <tr class="border-0">
+                                            <th class="border-0">#</th>
+                                            <th class="border-0">Username</th>
+                                            <th class="border-0">Full Name</th>
+                                            <th class="border-0">Role</th>
+                                            <th class="border-0">Investment Status</th>
+                                            <th class="border-0">Investment Track</th>
+                                            <th class="border-0">ROI Balance</th>
+                                            <th class="border-0">Referral Balance</th>
+                                            <th class="border-0">Total Balance</th>
+                                            <th class="border-0">Date</th>
+                                            <th class="border-0">Actions</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <%members.map((mb,index)=>{ %>
+                                            <tr>
+                                                <td>
+                                                    <%=mb.uid %>
+                                                </td>
+
+                                                <td>
+                                                    <%=mb.username %>
+                                                </td>
+
+                                                <td>
+                                                    <%=mb.fullname %>
+                                                </td>
+                                                
+                                                <td>
+                                                    <%=mb.role %>
+                                                </td>
+                                                
+                                                <td>
+                                                    <%if(mb.investment_status === "Active" || mb.investment_status === "active"){%>
+                                                    <a href="javascript: void(0);" class="btn btn-xs btn-success ml-1">Active</a>
+                                                    <%}else{%>
+                                                    <a href="javascript: void(0);" class="btn btn-xs btn-warning ml-1"><%=mb.investment_status || 'Not Running'%></a>
+                                                    <%} %>
+                                                </td>
+
+                                                <td>
+                                                    <%=mb.investment_track > 1 ? mb.investment_track + ' Days' : mb.investment_track + ' Day'%> 
+                                                </td>
+
+                                                <td>
+                                                    <%=webSettings.website_currency + mb.roi_balance %>
+                                                </td>
+
+                                                <td>
+                                                    <%=webSettings.website_currency + mb.referral_balance %>
+                                                </td>
+
+                                                <td>
+                                                    <%=webSettings.website_currency + mb.total_balance %>
+                                                </td>
+
+                                                
+
+
+                                                <td>
+                                                    <%=mb.created_at %>
+                                                </td>
+
+
+
+                                                <td id="action">
+                                                    
+
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#<%=mb.uid %>"
+                                                        class="btn btn-xs btn-info ml-1"><i class="fa fa-pencil"
+                                                            aria-hidden="true"></i></a>
+
+                                                    <a data-id="<%=mb.uid%>" href="javascript: void(0);"
+                                                        class="btn btn-xs btn-danger ml-1 delete-one"><i
+                                                            class="fa fa-trash" aria-hidden="true"></i></a>
+
+
+                                                </td>
+
+
+
+
+                                            </tr>
+                                            <%-include("./modal/edit",{mb});%>
+
+                                            <% }) %>
+
+                                                <tr>
+                                                    
+                                                </tr>
+                                    </tbody>
+
+                                </table>
+
+                                <ul class="pagination">
+                                    <%if(prevBtn){%>
+                                        <li class="page-item">
+                                            <a class="page-link" href="<%=pageLink%>page=<%=prevBtn%>" aria-label="Previous">
+                                                <span aria-hidden="true">«Previous</span> </a>
+                                        </li>
+                                
+                                        <%}%>
+                                
+                                
+                                            <%if(nextBtn){%>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="<%=pageLink%>page=<%=nextBtn%>" aria-label="Next"><span
+                                                            aria-hidden="true">Next»</span>
+                                                    </a>
+                                                </li>
+                                
+                                                <%}%>
+                                
+                                
+                                </ul>
+
+
+
+
+
+
+
+
+                            </div>
+                            <% }else{%>
+                                <h3 class="text-center pt-3">Empty Result</h3>
+                                <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="/js/admin/member/member.js"></script>
+    <%- include('../../partials/footer'); %>

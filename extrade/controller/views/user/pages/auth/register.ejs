@@ -1,0 +1,123 @@
+<html class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="data:image/png;base64,<%=webSettings.website_favicon%>">
+    <title><%=title %></title>
+    <link rel="stylesheet" href="/css/user/vendor.bundle.css">
+    <link rel="stylesheet" href="/css/user/style.css">
+    <link rel="stylesheet" href="/css/user/auth.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body class="nk-body body-wider bg-light-alt no-touch page-loaded chrome">
+    <div class="nk-wrap">
+        <main class="nk-pages nk-pages-centered bg-theme">
+            <div class="ath-container">
+                <div class="ath-header text-center">
+                    <a href="/" class="ath-logo"><img src="data:image/png;base64,<%=webSettings.website_logo%>" 
+                            alt="logo"></a>
+                </div>
+                <div class="ath-body">
+                    <h5 class="ath-heading title">Sign Up<small class="tc-default">Enter your personal
+                            information!</small></h5>
+
+                    <form id="regform">
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-pencil"></i>
+                                <input type="text" class="input-bordered" placeholder="Full Name" id="fullname"
+                                    required="">
+                            </div>
+                        </div>
+
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="input-bordered" placeholder="Username" id="username"
+                                    required="">
+                            </div>
+                        </div>
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-envelope"></i>
+                                <input type="text" class="input-bordered" placeholder="Email" id="email" required="">
+                            </div>
+                        </div>
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-key"></i>
+                                <input type="password" class="input-bordered" placeholder="Password" id="password"
+                                    required="">
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <i class="fa fa-key"></i>
+                                <input type="password" class="input-bordered" placeholder="Confirm Password"
+                                    id="password2" required="">
+                            </div>
+                        </div>
+
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <label for="">Your Upline Username (Optional)</label>
+                                <input type="text" class="input-bordered" placeholder="Who Refer You? (Optional)" id="upline" value="<%=ref?ref:''%>">
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="field-item">
+                            <div class="field-wrap">
+                                <label for="">Investment Packages</label>
+                                <select required class="input-bordered" id="plans">
+                                    <option value="">Select Your Package</option>
+                                    
+                                    <%[].map(pl =>{%>
+                                    <option value="<%=pl.id%>"><%=pl.plan_name%></option>
+
+                                    <%})%>
+                                </select>
+                            </div>
+                        </div> -->
+
+
+                        
+                        
+
+                        
+
+                        <div class="field-item" style="margin-top:-15px;color:#838383;">&nbsp;<small>
+
+                                Your Upline:
+                                <span class="upline"><%=ref?ref:'N/A (n/a)'%></span>
+                            </small></div>
+                        <div class="field-item" style="margin-top:-15px;color:#838383;">&nbsp;<small><input
+                                    type="checkbox" required> I agree with By Registering <a
+                                    href="/page/tos"> Terms and conditions</a></small></div>
+                        <button type="submit" class="btn btn-primary btn-block btn-md">Sign Up</button>
+                    </form>
+
+                    <div class="sap-text"><span>Already have an account?</span></div>
+                    <div style="text-align: center;"><a href="/login" class="btn btn-md btn-facebook"><span>Sign in
+                                here</span></a></div>
+
+                </div>
+                <div class="ath-note text-center tc-light">©<span class="date"></span> <%=webSettings.website_title%>. All rights reserved</div>
+            </div>
+        </main>
+
+    </div>
+    
+    <script src="/js/user/register.js"></script>
+    <script src="/js/sweetalert.js"></script>
+</body>
+
+</html>

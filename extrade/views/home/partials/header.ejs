@@ -1,0 +1,109 @@
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <title><%=title %></title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="<%= webSettings.website_description %>" name="description">
+    <meta content="<%= webSettings.website_author %>" name="author">
+
+  
+    <link rel="shortcut icon" href="data:image/png;base64,<%= webSettings.website_favicon %>">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer="" src="/js/home/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/css/home/tiny-slider.css">
+    <link rel="stylesheet" href="/css/home/webfont.css">
+
+    <!-- SVG CSS -->
+    <link id="theme-style1" rel="stylesheet" href="/css/home/svg.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/css/home/theme.css">
+
+    <style>
+        .post_description p {
+    overflow: hidden;
+    word-break: break-word;
+}
+.post-author-block .post-author-profile img {
+    width: 80px;
+    height: 80px;
+}
+.navbar-expand-lg {
+    flex-flow: wrap !important;
+}
+    </style>
+<%-webSettings.website_header_code %>
+</head>
+
+<body>
+    <div class="hero-wrapper">
+        
+        <!--//curve-container-->
+        <header class="header">
+            <div class="branding">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="site-logo mr-5"><a class="navbar-brand" href="/"><img class="logo-icon mr-2" src="data:image/png;base64,<%= webSettings.website_logo %>" alt="logo"
+                            style="width: 100%;height: 30px;object-fit: contain;"></a></div>
+                    
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
+                            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse pt-3 pt-lg-0" id="navigation">
+                    
+                            <ul class="navbar-nav">
+                                <li class="nav-item mr-lg-4">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item mr-lg-4">
+                                    <a class="nav-link" href="/plans">Investment Plans</a>
+                                </li>
+                                <li class="nav-item mr-lg-4">
+                                    <a class="nav-link" href="/page/how-it-works">How It Works</a>
+                                </li>
+                                <li class="nav-item mr-lg-4">
+                                    <a class="nav-link" href="/page/vendor">Vendor's List</a>
+                                </li>
+                                <li class="nav-item mr-lg-4">
+                                    <a class="nav-link" href="/contact-us">Contact Us</a>
+                                </li>
+                                
+                            </ul>
+                    
+                            <ul class="navbar-nav ml-auto">
+                                <%if(user){%>
+                                <li class="nav-item">
+                                    <a class="nav-btn btn btn-gradient text-white" href="/dashboard">Dashboard</a>
+                                </li>
+                                <%}else{%>
+                                <li class="nav-item mr-lg-3">
+                                    <a class="nav-link mt-1 mb-3 mb-lg-0" href="/login">Sign In</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-btn btn btn-gradient text-white" href="/register">Register</a>
+                                </li>
+                                <%}%>
+                            </ul>
+                            <!--//navbar-nav-->
+                        </div>
+                    </nav>
+
+                </div>
+                <!--//container-->
+            </div>
+            <!--//branding-->
+        </header>
+        <!--//header-->
