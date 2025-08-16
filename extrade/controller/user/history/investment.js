@@ -1,8 +1,8 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { getAllUserInvestmentHistory } = require("../../../helpers/investment");
-const { openToken } = require("../../../helpers/jwt");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
-const { getNextOffset, paginateData } = require("../../../helpers/pagination");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { getAllUserInvestmentHistory } = require("../../../controller/helpers/investment");
+const { openToken } = require("../../../controller/helpers/jwt");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
+const { getNextOffset, paginateData } = require("../../../controller/helpers/pagination");
 
 exports.investmentHistoryGet = asyncHandler(async (req, res, next) => {
     const { id } = await openToken(req.signedCookies[process.env.TOKEN_NAME]);

@@ -1,11 +1,11 @@
-const asyncHandler = require("../../helpers/asyncHandler");
-const { getDurationFunc } = require("../../helpers/duration");
-const { getUserReferralHistory } = require("../../helpers/history");
-const { openToken } = require("../../helpers/jwt");
-const { dateToPostFormat } = require("../../helpers/manipulateDate");
-const { getPlanById } = require("../../helpers/plans");
-const { getUserById } = require("../../helpers/user");
-const { getUserWallets } = require("../../helpers/wallet");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const { getDurationFunc } = require("../../controller/helpers/duration");
+const { getUserReferralHistory } = require("../../controller/helpers/history");
+const { openToken } = require("../../controller/helpers/jwt");
+const { dateToPostFormat } = require("../../controller/helpers/manipulateDate");
+const { getPlanById } = require("../../controller/helpers/plans");
+const { getUserById } = require("../../controller/helpers/user");
+const { getUserWallets } = require("../../controller/helpers/wallet");
 
 exports.dashboardGet = asyncHandler(async (req, res, next) => {
 

@@ -1,5 +1,5 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { saveWebsiteSettings } = require("../../../helpers/settings");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { saveWebsiteSettings } = require("../../../controller/helpers/settings");
 
 exports.adminWebSettingsGet = asyncHandler(async (req, res, next) => {
     res.render("admin/pages/settings/websettings", {

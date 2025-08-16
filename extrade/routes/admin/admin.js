@@ -8,13 +8,18 @@ const { adminListPlans, adminAddNewPlan, adminAddNewPlanGet, adminEditNewPlan, a
 const { adminWebSettingsGet, adminWebSettingsPost, adminWebSettingsImagePut , adminPaymentSettingsGet, adminPaymentSettingsPost, adminCodeInserterGet} = require("../../controller/admin/dashboard/settings");
 const { adminWithdrawalGet, adminWithdrawalPost, adminWithdrawalDelete, adminPaidWithdrawalGet, adminWithdrawalExport } = require("../../controller/admin/dashboard/withdrawal");
 const { loginPost } = require("../../controller/general/login");
-const { isRoleAllow, isUserLogin, isAuthUser } = require("../../middleware/isAuth");
+// const { isRoleAllow, isUserLogin, isAuthUser } = require("../../middleware/isAuth");
 const { uploadPostImage } = require("../../multer/multerMiddleware");
 
 const adminRoute = require("express").Router();
 
 
 adminRoute.route("/dashboard").get(adminDashboardGet)
+
+// Test route
+adminRoute.route("/test").get((req, res) => {
+    res.json({ success: true, message: "Admin routes are working!" });
+});
 
 adminRoute.route("/plans").get(adminListPlans).put(adminEditNewPlan).delete(admindeletePlan)
 

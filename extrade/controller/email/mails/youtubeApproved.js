@@ -1,8 +1,8 @@
 const transporter = require("../transporter");
 const ejs = require("ejs")
 const path = require("path");
-const logger = require("../../helpers/logger");
-const { getWebsiteSettings } = require("../../helpers/getSomeInfo");
+const logger = require("../../controller/helpers/logger");
+const { getWebsiteSettings } = require("../../controller/helpers/getSomeInfo");
 
 exports.youtubeApproved = async (email) => {
 

@@ -1,7 +1,7 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { openToken } = require("../../../helpers/jwt");
-const { hashPassword, comparePassword } = require("../../../helpers/password");
-const { getUserById, editUserById } = require("../../../helpers/user");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { openToken } = require("../../../controller/helpers/jwt");
+const { hashPassword, comparePassword } = require("../../../controller/helpers/password");
+const { getUserById, editUserById } = require("../../../controller/helpers/user");
 
 exports.basicSettingsGet = asyncHandler(async (req, res, next) => {
     res.render("user/pages/settings/basic", {

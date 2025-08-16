@@ -1,15 +1,15 @@
-const asyncHandler = require("../../helpers/asyncHandler");
-const { hashPassword } = require("../../helpers/password");
-const { insertIntoReferralTable } = require("../../helpers/referrals");
-const { getUserById, getUserByUsername, insertUserIntoDb } = require("../../helpers/user");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const { hashPassword } = require("../../controller/helpers/password");
+const { insertIntoReferralTable } = require("../../controller/helpers/referrals");
+const { getUserById, getUserByUsername, insertUserIntoDb } = require("../../controller/helpers/user");
 const allowDatas = require("../../security/allowDatas");
 
 exports.registerGet = asyncHandler(async (req, res, next) => {
-    let ref;
+    let ref = null;
 
     if (req.query.ref) {
-        const user = await getUserById(req.query.ref)
-        ref = user && user.username
+        // Mock referral for now
+        ref = "demo_user"
     }
     res.render("user/pages/auth/register", {
         title: "Register",

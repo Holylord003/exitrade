@@ -1,12 +1,12 @@
-const asyncHandler = require("../../helpers/asyncHandler");
-const { calculatePercentage } = require("../../helpers/calculation");
-const { getCouponByName, useCouponById } = require("../../helpers/coupon");
-const { insertIntoInvestmentHistory, insertIntoEarningHistory } = require("../../helpers/history");
-const { openToken } = require("../../helpers/jwt");
-const { deleteAllUserOrderById } = require("../../helpers/orders");
-const { getAllPlans, setupNewPlans, editSetupNewPlans, userHasPlan_, getPlanById } = require("../../helpers/plans");
-const { approveReferral } = require("../../helpers/referrals");
-const { getUserById, editUserById } = require("../../helpers/user");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const { calculatePercentage } = require("../../controller/helpers/calculation");
+const { getCouponByName, useCouponById } = require("../../controller/helpers/coupon");
+const { insertIntoInvestmentHistory, insertIntoEarningHistory } = require("../../controller/helpers/history");
+const { openToken } = require("../../controller/helpers/jwt");
+const { deleteAllUserOrderById } = require("../../controller/helpers/orders");
+const { getAllPlans, setupNewPlans, editSetupNewPlans, userHasPlan_, getPlanById } = require("../../controller/helpers/plans");
+const { approveReferral } = require("../../controller/helpers/referrals");
+const { getUserById, editUserById } = require("../../controller/helpers/user");
 
 exports.userGetPlans = asyncHandler(async (req, res, next) => {
     const plans = await getAllPlans();

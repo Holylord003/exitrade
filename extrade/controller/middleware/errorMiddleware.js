@@ -1,4 +1,4 @@
-const logger = require("../helpers/logger");
+const logger = require("../controller/helpers/logger");
 
 const errorMiddleWare = (err, req, res, next) => {
 

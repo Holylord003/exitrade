@@ -1,4 +1,4 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
 
 exports.adminLoginGet = asyncHandler(async (req, res, next) => {
     

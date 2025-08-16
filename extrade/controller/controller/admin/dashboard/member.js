@@ -1,7 +1,7 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
-const { getNextOffset, paginateData } = require("../../../helpers/pagination");
-const { getMembersFunc, deleteUserById, editUserById } = require("../../../helpers/user");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
+const { getNextOffset, paginateData } = require("../../../controller/helpers/pagination");
+const { getMembersFunc, deleteUserById, editUserById } = require("../../../controller/helpers/user");
 
 exports.membersGet = asyncHandler(async (req, res, next) => {
     const limit = parseInt(req.query.limit) || parseInt(process.env.LIMIT);

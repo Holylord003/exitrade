@@ -1,5 +1,5 @@
 
-const { openToken } = require("../helpers/jwt");
+const { openToken } = require("../controller/helpers/jwt");
 
 const { getWebSettings, userinfo } = require("../middleware/generalData");
 const db = require("../models/db");

@@ -1,5 +1,5 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { createNewPlan, listPlan, editPlanById, deletePlanById } = require("../../../helpers/plans");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { createNewPlan, listPlan, editPlanById, deletePlanById } = require("../../../controller/helpers/plans");
 
 exports.adminListPlans = asyncHandler(async (req, res, next) => {
     const packages = await listPlan();

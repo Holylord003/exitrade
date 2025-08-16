@@ -1,10 +1,10 @@
-const { paymentMailer } = require("../../../email/mails/payment");
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
-const { getNextOffset } = require("../../../helpers/pagination");
-const { dataToCsv } = require("../../../helpers/toCsv");
-const { getUserById, editUserById } = require("../../../helpers/user");
-const { adminGetPendingWithdrawal, updateWithdrawal, deleteWithdrawal, adminGetPaidWithdrawal, getWithdrawalById, getWithdrawalForExportById } = require("../../../helpers/withdrawal");
+const { paymentMailer } = require("../../email/mails/payment");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
+const { getNextOffset } = require("../../../controller/helpers/pagination");
+const { dataToCsv } = require("../../../controller/helpers/toCsv");
+const { getUserById, editUserById } = require("../../../controller/helpers/user");
+const { adminGetPendingWithdrawal, updateWithdrawal, deleteWithdrawal, adminGetPaidWithdrawal, getWithdrawalById, getWithdrawalForExportById } = require("../../../controller/helpers/withdrawal");
 
 //PENDING WITHDRAWAL
 exports.adminWithdrawalGet = asyncHandler(async (req, res, next) => {

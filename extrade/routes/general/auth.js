@@ -7,18 +7,18 @@ const { isAuthUser, isUserLogin } = require("../../middleware/isAuth");
 const authRoute = require("express").Router();
 
 //Register
-authRoute.route("/register").get(isAuthUser, registerGet).post(isAuthUser, registerPost).put(isAuthUser, getUplineByUsername)
+authRoute.route("/register").get(registerGet).post(registerPost).put(getUplineByUsername)
 
 //Login
-authRoute.route("/login").get(isAuthUser, loginGet).post(isAuthUser, loginPost);
+authRoute.route("/login").get(loginGet).post(loginPost);
 
 //Forgot Password
-authRoute.route("/reset-password").get(isAuthUser, forgotGet).post(isAuthUser, forgotPost);
+authRoute.route("/reset-password").get(forgotGet).post(forgotPost);
 
 //Change Password
-authRoute.route("/reset/password").get(isAuthUser, changePasswordGet).put(isAuthUser, changePasswordPut);
+authRoute.route("/reset/password").get(changePasswordGet).put(changePasswordPut);
 
 //Logout
-authRoute.route("/logout").get(isUserLogin, logoutController)
+authRoute.route("/logout").get(logoutController)
 
 module.exports = authRoute

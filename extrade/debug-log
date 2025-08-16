@@ -29,3 +29,1104 @@
   sqlState: '08004',
   fatal: true
 }
+[2025-08-16T02:33:44.617] [DEBUG] default - Error: getaddrinfo ENOTFOUND your-mysql-host.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'your-mysql-host.com',
+  fatal: true
+}
+[2025-08-16T02:37:17.386] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:37:18.281] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:37:18.602] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:37:18.839] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:37:19.078] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:37:19.346] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:38:02.801] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:38:49.333] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/home/pages/home.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|         <section style="overflow: hidden;" class="hero-section over-curve pt-5 py-md-5">\r\n' +
+    '    4|             <div class="container">\r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/home/partials/header.ejs:10\n' +
+    '    8|     <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\n' +
+    '    9|     <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+    ' >> 10|     <meta content="<%= webSettings.website_description %>" name="description">\r\n' +
+    '    11|     <meta content="<%= webSettings.website_author %>" name="author">\r\n' +
+    '    12| \r\n' +
+    '    13|   \r\n' +
+    '\n' +
+    'webSettings is not defined'
+}
+[2025-08-16T02:41:15.302] [DEBUG] default - Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Function.listen (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/macbookpro/Downloads/extrade1/extrade/app.js:134:13)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+[2025-08-16T02:41:57.844] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:41:58.690] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:41:58.935] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:42:06.103] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:42:06.698] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:42:06.932] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:42:07.126] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/login.ejs:1\n' +
+    ' >> 1| <%if(showNotice){%>\r\n' +
+    '    2|     <%-include("../../pages/dashboard/welcomeNotice")%>\r\n' +
+    '    3| <%}else{%>\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    'showNotice is not defined'
+}
+[2025-08-16T02:42:35.006] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/register.ejs:72\n' +
+    '    70|                             <div class="field-wrap">\r\n' +
+    '    71|                                 <label for="">Your Upline Username (Optional)</label>\r\n' +
+    ` >> 72|                                 <input type="text" class="input-bordered" placeholder="Who Refer You? (Optional)" id="upline" value="<%=ref?ref:''%>">\r\n` +
+    '    73|                             </div>\r\n' +
+    '    74|                         </div>\r\n' +
+    '    75| \r\n' +
+    '\n' +
+    'ref is not defined'
+}
+[2025-08-16T02:42:42.479] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/user/pages/auth/register.ejs:72\n' +
+    '    70|                             <div class="field-wrap">\r\n' +
+    '    71|                                 <label for="">Your Upline Username (Optional)</label>\r\n' +
+    ` >> 72|                                 <input type="text" class="input-bordered" placeholder="Who Refer You? (Optional)" id="upline" value="<%=ref?ref:''%>">\r\n` +
+    '    73|                             </div>\r\n' +
+    '    74|                         </div>\r\n' +
+    '    75| \r\n' +
+    '\n' +
+    'ref is not defined'
+}
+[2025-08-16T02:54:15.540] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T02:54:25.500] [DEBUG] default - Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/mysql2/lib/base/connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2025-08-16T02:55:37.814] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T02:55:47.777] [DEBUG] default - Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/mysql2/lib/base/connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2025-08-16T02:56:29.840] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T02:56:39.809] [DEBUG] default - Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/mysql2/lib/base/connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2025-08-16T02:57:24.531] [DEBUG] default - { status: 500, message: 'Server Error' }
+[2025-08-16T02:59:47.484] [DEBUG] default - { status: 500, message: 'Server Error' }
+[2025-08-16T02:59:53.228] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:00:03.188] [DEBUG] default - Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/mysql2/lib/base/connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2025-08-16T03:01:14.988] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:01:24.948] [DEBUG] default - Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/mysql2/lib/base/connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2025-08-16T03:02:07.617] [DEBUG] default - { status: 500, message: 'Server Error' }
+[2025-08-16T03:03:15.752] [DEBUG] default - { status: 500, message: 'Server Error' }
+[2025-08-16T03:03:45.114] [DEBUG] default - { status: 500, message: 'Server Error' }
+[2025-08-16T03:04:24.647] [DEBUG] default - { status: 500, message: 'Server Error' }
+[2025-08-16T03:04:29.094] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:04:39.054] [DEBUG] default - Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (/Users/macbookpro/Downloads/extrade1/extrade/node_modules/mysql2/lib/base/connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2025-08-16T03:07:37.484] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:09:59.068] [DEBUG] default - ReferenceError: adminAuthRoute is not defined
+    at Object.<anonymous> (/Users/macbookpro/Downloads/extrade1/extrade/app.js:63:42)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+[2025-08-16T03:09:59.079] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:10:06.775] [DEBUG] default - ReferenceError: adminAuthRoute is not defined
+    at Object.<anonymous> (/Users/macbookpro/Downloads/extrade1/extrade/app.js:63:42)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+[2025-08-16T03:10:06.786] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:10:25.894] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:13:21.252] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:13:47.136] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:20:12.618] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:22:11.901] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:22:31.749] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:22:58.566] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:23:02.522] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:23:21.460] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:23:26.135] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:24:19.167] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:26:08.305] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:26:39.035] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:27:00.401] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:27:02.654] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:27:56.505] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:28:02.875] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:28:35.060] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:28:41.645] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:28:55.015] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:28:57.913] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:29:25.673] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:29:28.448] [DEBUG] default - {
+  status: 500,
+  message: '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/pages/dashboard.ejs:1\n' +
+    " >> 1| <%- include('../partials/header'); %>\r\n" +
+    '    2| \r\n' +
+    '    3|     <div class="container-fluid dashboard-content ">\r\n' +
+    '    4| \r\n' +
+    '\n' +
+    '/Users/macbookpro/Downloads/extrade1/extrade/views/admin/partials/header.ejs:67\n' +
+    '    65|                     \r\n' +
+    '    66|                         <a class="nav-link nav-user-img" href="#" id="" data-toggle="dropdown" aria-haspopup="true"\r\n' +
+    ` >> 67|                             aria-expanded="false"><img src="<%=user.avatar ?'data:image/png;base64,'+user.avatar:'/img/avatar.jpg' %>"\r\n` +
+    '    68|                                 alt="" class="user-avatar-md rounded-circle"></a>\r\n' +
+    '    69|                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">\r\n' +
+    '    70|                             <div class="nav-user-info">\r\n' +
+    '\n' +
+    "Cannot read properties of null (reading 'avatar')"
+}
+[2025-08-16T03:30:40.469] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:30:57.587] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:31:10.226] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:32:06.813] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:33:05.652] [DEBUG] default - AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+[2025-08-16T03:33:41.974] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }
+[2025-08-16T03:33:58.558] [DEBUG] default - { status: 500, message: 'secretOrPrivateKey must have a value' }

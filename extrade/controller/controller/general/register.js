@@ -1,7 +1,7 @@
-const asyncHandler = require("../../helpers/asyncHandler");
-const { hashPassword } = require("../../helpers/password");
-const { insertIntoReferralTable } = require("../../helpers/referrals");
-const { getUserById, getUserByUsername, insertUserIntoDb } = require("../../helpers/user");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const { hashPassword } = require("../../controller/helpers/password");
+const { insertIntoReferralTable } = require("../../controller/helpers/referrals");
+const { getUserById, getUserByUsername, insertUserIntoDb } = require("../../controller/helpers/user");
 const allowDatas = require("../../security/allowDatas");
 
 exports.registerGet = asyncHandler(async (req, res, next) => {

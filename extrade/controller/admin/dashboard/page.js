@@ -1,7 +1,7 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
-const { createPage, adminGetPagesFunction, getPageById, editPageById, deletePageById } = require("../../../helpers/page");
-const { getNextOffset } = require("../../../helpers/pagination");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
+const { createPage, adminGetPagesFunction, getPageById, editPageById, deletePageById } = require("../../../controller/helpers/page");
+const { getNextOffset } = require("../../../controller/helpers/pagination");
 
 exports.adminNewPageGet = asyncHandler(async (req, res, next) => {
     

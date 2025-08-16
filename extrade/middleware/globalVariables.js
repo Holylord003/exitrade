@@ -1,8 +1,8 @@
 
-const { openToken } = require("../helpers/jwt");
+const { openToken } = require("../controller/helpers/jwt");
 
 const { getWebSettings, userinfo } = require("../middleware/generalData");
-const db = require("../models/db");
+// const db = require("../models/db");
 
 
 //Global Variable :)
@@ -16,20 +16,18 @@ exports.setGlobalVariable = async (req, res, next) => {
 
     //GET USER
     if (req.signedCookies[process.env.TOKEN_NAME]) {
-        const { id } = await openToken(req.signedCookies[process.env.TOKEN_NAME]);
-
-        req.app.locals.user = await userinfo(id);
-        
-
-        } else {
-            req.app.locals.user = null
-            
-           
-    }
-    
-    if(!req.app.locals.user){
+        try {
+            const { id } = await openToken(req.signedCookies[process.env.TOKEN_NAME]);
+            req.app.locals.user = await userinfo(id);
+        } catch (error) {
+            req.app.locals.user = null;
             res.clearCookie(process.env.TOKEN_NAME);
         }
+    } else {
+        req.app.locals.user = null;
+    }
+    
+    // Remove this redundant check since we handle it above
         
         
     

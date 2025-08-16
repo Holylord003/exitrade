@@ -1,9 +1,9 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const formatNumber = require("../../../helpers/formatNumber");
-const { getTotalMembersCount, getTotalActiveMembersCount } = require("../../../helpers/user");
-const { getWithdrawalSum, adminGetPendingWithdrawal } = require("../../../helpers/withdrawal");
-const { getAllActiveOrdersCount, getAllActiveOrders } = require("../../../helpers/orders");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const formatNumber = require("../../../controller/helpers/formatNumber");
+const { getTotalMembersCount, getTotalActiveMembersCount } = require("../../../controller/helpers/user");
+const { getWithdrawalSum, adminGetPendingWithdrawal } = require("../../../controller/helpers/withdrawal");
+const { getAllActiveOrdersCount, getAllActiveOrders } = require("../../../controller/helpers/orders");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
 
 exports.adminDashboardGet = asyncHandler(async (req, res, next) => {
 

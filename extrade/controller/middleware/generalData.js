@@ -1,8 +1,8 @@
-const blobToBase64 = require("../helpers/blobToBase64")
-const getDateDifference = require("../helpers/getDateDifference")
-const { openToken } = require("../helpers/jwt")
-const manipulateDate = require("../helpers/manipulateDate")
-const numberWithDelimeter = require("../helpers/numberWithDelimeter")
+const blobToBase64 = require("../controller/helpers/blobToBase64")
+const getDateDifference = require("../controller/helpers/getDateDifference")
+const { openToken } = require("../controller/helpers/jwt")
+const manipulateDate = require("../controller/helpers/manipulateDate")
+const numberWithDelimeter = require("../controller/helpers/numberWithDelimeter")
 const db = require("../models/db")
 
 //GET USER INFO

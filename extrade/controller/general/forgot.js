@@ -1,9 +1,9 @@
 const validator = require("validator");
-const { resetPasswordMailer } = require("../../email/mails/resetPasswordMail");
-const asyncHandler = require("../../helpers/asyncHandler");
-const { signToken, signResetPasswordToken, openToken } = require("../../helpers/jwt");
-const { comparePassword, hashPassword } = require("../../helpers/password");
-const { getUserByEmail, getUserByUsername, editUserById } = require("../../helpers/user");
+const { resetPasswordMailer } = require("../email/mails/resetPasswordMail");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const { signToken, signResetPasswordToken, openToken } = require("../../controller/helpers/jwt");
+const { comparePassword, hashPassword } = require("../../controller/helpers/password");
+const { getUserByEmail, getUserByUsername, editUserById } = require("../../controller/helpers/user");
 
 exports.forgotGet = asyncHandler(async (req, res, next) => {
 

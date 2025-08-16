@@ -1,10 +1,10 @@
 const { contactUsMailer } = require("../../email/mails/contact");
-const asyncHandler = require("../../helpers/asyncHandler");
-const formatNumber = require("../../helpers/formatNumber");
-const { getPageBySlug } = require("../../helpers/page");
-const { getAllPlans } = require("../../helpers/plans");
-const { getTotalMembersCount, getTotalActiveMembersCount } = require("../../helpers/user");
-const { getWithdrawalSum } = require("../../helpers/withdrawal");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const formatNumber = require("../../controller/helpers/formatNumber");
+const { getPageBySlug } = require("../../controller/helpers/page");
+const { getAllPlans } = require("../../controller/helpers/plans");
+const { getTotalMembersCount, getTotalActiveMembersCount } = require("../../controller/helpers/user");
+const { getWithdrawalSum } = require("../../controller/helpers/withdrawal");
 
 exports.homeGet = asyncHandler(async (req, res, next) => {
     

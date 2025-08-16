@@ -1,8 +1,8 @@
 const validator = require("validator");
-const asyncHandler = require("../../helpers/asyncHandler");
-const { signToken } = require("../../helpers/jwt");
-const { comparePassword } = require("../../helpers/password");
-const { getUserByEmail, getUserByUsername } = require("../../helpers/user");
+const asyncHandler = require("../../controller/helpers/asyncHandler");
+const { signToken } = require("../../controller/helpers/jwt");
+const { comparePassword } = require("../../controller/helpers/password");
+const { getUserByEmail, getUserByUsername } = require("../../controller/helpers/user");
 
 exports.loginGet = asyncHandler(async (req, res, next) => {
 

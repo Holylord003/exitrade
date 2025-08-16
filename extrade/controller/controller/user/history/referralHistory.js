@@ -1,8 +1,8 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { openToken } = require("../../../helpers/jwt");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
-const { getNextOffset, paginateData } = require("../../../helpers/pagination");
-const { getUserReferralHistory } = require("../../../helpers/history");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { openToken } = require("../../../controller/helpers/jwt");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
+const { getNextOffset, paginateData } = require("../../../controller/helpers/pagination");
+const { getUserReferralHistory } = require("../../../controller/helpers/history");
 
 
 exports.referralHistoryGet = asyncHandler(async (req, res, next) => {

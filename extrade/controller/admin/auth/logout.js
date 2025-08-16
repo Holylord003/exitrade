@@ -1,6 +1,6 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { openToken } = require("../../../helpers/jwt");
-const { getUserById } = require("../../../helpers/user");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { openToken } = require("../../../controller/helpers/jwt");
+const { getUserById } = require("../../../controller/helpers/user");
 
 //LOGOUT
 exports.logoutController = asyncHandler(async (req, res, next) => {

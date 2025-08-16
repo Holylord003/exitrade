@@ -1,8 +1,8 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { getAllBank } = require("../../../helpers/bankVerification");
-const { openToken } = require("../../../helpers/jwt");
-const { getWebSettings } = require("../../../helpers/settings");
-const { getUserWallets, createNewWallet, editWallet } = require("../../../helpers/wallet");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { getAllBank } = require("../../../controller/helpers/bankVerification");
+const { openToken } = require("../../../controller/helpers/jwt");
+const { getWebSettings } = require("../../../controller/helpers/settings");
+const { getUserWallets, createNewWallet, editWallet } = require("../../../controller/helpers/wallet");
 const fetch = require("node-fetch");
 
 exports.paymentWalletGet = asyncHandler(async (req, res, next) => {

@@ -1,12 +1,12 @@
 const CronJob = require('cron').CronJob;
-const logger = require("../helpers/logger");
-const { getPlanById } = require("../helpers/plans");
-const { editUserById, getUserById } = require("../helpers/user");
-const { getSegmented } = require("../helpers/duration");
-const { processWithdrawal } = require("../helpers/withdrawal");
-const { calculatePercentage } = require("../helpers/calculation");
-const { completeInvestmentHistoryByUserId, insertIntoEarningHistory } = require("../helpers/history");
-const earningTextDetails = require("../helpers/textDetails");
+const logger = require("../controller/helpers/logger");
+const { getPlanById } = require("../controller/helpers/plans");
+const { editUserById, getUserById } = require("../controller/helpers/user");
+const { getSegmented } = require("../controller/helpers/duration");
+const { processWithdrawal } = require("../controller/helpers/withdrawal");
+const { calculatePercentage } = require("../controller/helpers/calculation");
+const { completeInvestmentHistoryByUserId, insertIntoEarningHistory } = require("../controller/helpers/history");
+const earningTextDetails = require("../controller/helpers/textDetails");
 const db = require("../models/db");
 
 

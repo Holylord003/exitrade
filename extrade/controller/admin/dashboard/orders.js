@@ -1,10 +1,10 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const blobToBase64 = require("../../../helpers/blobToBase64");
-const { dateToPostFormat } = require("../../../helpers/manipulateDate");
-const { getAllPendingOrders, editOrderById, getOrderById, deleteOrderById, getAllOrders } = require("../../../helpers/orders");
-const { getNextOffset, paginateData } = require("../../../helpers/pagination");
-const { approveReferral } = require("../../../helpers/referrals");
-const { editUserById } = require("../../../helpers/user");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const blobToBase64 = require("../../../controller/helpers/blobToBase64");
+const { dateToPostFormat } = require("../../../controller/helpers/manipulateDate");
+const { getAllPendingOrders, editOrderById, getOrderById, deleteOrderById, getAllOrders } = require("../../../controller/helpers/orders");
+const { getNextOffset, paginateData } = require("../../../controller/helpers/pagination");
+const { approveReferral } = require("../../../controller/helpers/referrals");
+const { editUserById } = require("../../../controller/helpers/user");
 
 exports.adminOrdersGet = asyncHandler(async (req, res, next) => {
     

@@ -1,10 +1,10 @@
-const asyncHandler = require("../../../helpers/asyncHandler");
-const { generateCoupons, adminListCouponFunc } = require("../../../helpers/coupon");
-const { openToken } = require("../../../helpers/jwt");
-const { getNextOffset, paginateData } = require("../../../helpers/pagination");
-const { listPlan } = require("../../../helpers/plans");
-const { getWebSettings } = require("../../../helpers/settings");
-const { getUniqueID } = require("../../../helpers/uniqueID");
+const asyncHandler = require("../../../controller/helpers/asyncHandler");
+const { generateCoupons, adminListCouponFunc } = require("../../../controller/helpers/coupon");
+const { openToken } = require("../../../controller/helpers/jwt");
+const { getNextOffset, paginateData } = require("../../../controller/helpers/pagination");
+const { listPlan } = require("../../../controller/helpers/plans");
+const { getWebSettings } = require("../../../controller/helpers/settings");
+const { getUniqueID } = require("../../../controller/helpers/uniqueID");
 
 
 //GET COUPON LIST

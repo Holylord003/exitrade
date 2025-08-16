@@ -1,7 +1,7 @@
-const getDateDifference = require("../helpers/getDateDifference")
-const { openToken } = require("../helpers/jwt")
-const logger = require("../helpers/logger")
-const { getUserById } = require("../helpers/user")
+const getDateDifference = require("../controller/helpers/getDateDifference")
+const { openToken } = require("../controller/helpers/jwt")
+const logger = require("../controller/helpers/logger")
+const { getUserById } = require("../controller/helpers/user")
 
 const db = require("../models/db")
 
