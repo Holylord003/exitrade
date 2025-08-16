@@ -8,6 +8,22 @@
   ],
   "routes": [
     {
+      "src": "/css/(.*)",
+      "dest": "/extrade/public/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/extrade/public/js/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "/extrade/public/img/$1"
+    },
+    {
+      "src": "/fonts/(.*)",
+      "dest": "/extrade/public/fonts/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/extrade/app.js"
     }

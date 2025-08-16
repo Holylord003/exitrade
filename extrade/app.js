@@ -48,9 +48,27 @@ try {
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
     app.use(cookieParser(process.env.COOKIE_SECRET || 'default-secret'));
-    app.use(express.static(path.join('public')));
+    // Serve static files
+    const staticPath = path.join(__dirname, 'public');
+    console.log('Static files path:', staticPath);
+    app.use(express.static(staticPath));
 
 
+
+    // Test route for static files
+    app.get('/test-css', (req, res) => {
+        res.send(`
+            <html>
+                <head>
+                    <link rel="stylesheet" href="/css/home/theme.css">
+                </head>
+                <body>
+                    <h1>CSS Test</h1>
+                    <p>If you see styled text, CSS is working!</p>
+                </body>
+            </html>
+        `);
+    });
 
     //ROUTES
     //HOME ROUTE
